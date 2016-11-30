@@ -1,0 +1,8 @@
+<h1>Edit Your Reservation</h1>
+
+<div class="reservation-form">
+  <div class="field">
+    <%= Restaurant.find(@reservation.restaurant_id).name %>
+  </div>
+<%= render 'form' %>
+</div>

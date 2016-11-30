@@ -1,0 +1,197 @@
+// Place all the styles related to the restaurants controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.mn_img_container {
+  position: relative;
+  height: 400px;
+}
+
+#main-image img{
+  min-width: 540px;
+  width:100%;
+  max-height: 400px;
+  text-align: center;
+  padding-top: 3px;
+  // padding-top: 15px;
+  position: absolute;
+  filter: brightness(98%);
+  -webkit-filter: brightness(98%);
+  -moz-filter: brightness(98%);
+  -ms-filter: brightness(98%);
+}
+
+#main-image #image-text-header{
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  padding-top: 12%;
+  width: 100%;
+  color: white;
+}
+
+#main-image #image-subtext{
+  font-family: 'Muli', sans-serif;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+
+.list-container {
+  position: relative;
+  margin: 15px;
+}
+
+.list-items {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 350px;
+  height: 300px;
+  display: inline-block;
+  margin: 5px, 0, 5px, 0;
+}
+
+.list-items #image {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  filter: brightness(50%);
+  -webkit-filter: brightness(50%);
+  -moz-filter: brightness(50%);
+  -ms-filter: brightness(50%);
+}
+
+.list-items #image:hover {
+  filter: brightness(98%);
+  -webkit-filter: brightness(98%);
+  -moz-filter: brightness(98%);
+  -ms-filter: brightness(98%);
+}
+
+.list-items #name {
+  font-size: 20px;
+  color: white;
+  position: relative;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.list-items #name a {
+  letter-spacing: 3px;
+  font-family: 'Playfair Display', serif;
+  text-decoration: none;
+  color: white;
+}
+
+.list-items #address {
+  letter-spacing: 3px;
+  font-family: 'Muli', sans-serif;
+  color: white;
+  position: relative;
+  text-align: center;
+}
+
+.list-items #address img{
+  width: 13px;
+  padding-right: 7px;
+}
+
+.search {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  color: white;
+}
+
+#search{
+  height: 25px;
+  width: 250px;
+}
+
+.restaurant-form {
+  margin:auto;
+  margin-top: 3%;
+  margin-bottom: 70px;
+  width: 300px;
+  padding: 50px 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.restaurant-form .field{
+  text-align: center
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+}
+
+.show-image {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+.show-image img {
+  position: absolute;
+  width:100%;
+  overflow: hidden;
+  margin: -200px 0 -100px 0;
+  filter: brightness(50%);
+  -webkit-filter: brightness(50%);
+  -moz-filter: brightness(50%);
+  -ms-filter: brightness(50%);
+}
+
+.show-image h1 {
+  position: relative;
+  text-align: center;
+  margin-top: 140px;
+  margin-bottom: 30px;
+  font-size: 100px;
+  color: white;
+  font-family: 'Satisfy', cursive;
+}
+
+.button {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.button a {
+  align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 3px;
+  font-family: 'Muli', sans-serif;
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.info h4 {
+ text-align: center;
+ font-family: 'Muli', sans-serif;
+ padding: 5px;
+ margin: 0;
+}
+
+.info {
+ padding: 30px;
+}
+
+.back {
+ font-family: 'Muli', sans-serif;
+ position: relative;
+}
+
+.back a {
+ text-decoration: none;
+}

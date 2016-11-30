@@ -1,0 +1,55 @@
+
+    <%= image_tag "food-salad.jpg" %><br />
+    <h1><%= @user.name %></h1>
+    <div class="button"><%= link_to "Edit Profile", edit_user_path(@user) %>
+  </div>
+</div>
+
+
+<div class="info">
+  <h4>
+    E-mail: <%= @user.email %><br />
+    Phone: <%= @user.phone %><br />
+  </h4>
+</div>
+
+<div class = "profile-title">Your Reservations</div>
+
+<div class="reservationlist">
+  <% @user.reservations.each do |reservation| %>
+  <div class="reservation">
+    <p id="reservation-info">
+       Restaurant: <%= Restaurant.find(reservation.restaurant_id).name %><br>
+       Party Size: <%= reservation.party_size %><br>
+       Date: <%= reservation.date %><br>
+       Time: <%= reservation.time.strftime("%I %p") %><br>
+       Special Requests: <%= reservation.comment %><br>
+       <div class="button">
+         <%= link_to "Edit", "/restaurants/#{reservation.restaurant_id}/reservations/#{reservation.id}/edit" %>
+         <%= link_to "Delete", "/restaurants/#{reservation.restaurant_id}/reservations/#{reservation.id}", method: :delete, data: {confirm: "Are you sure you want to cancel your reservation? "} %>
+       </div>
+    </p>
+  </div>
+  <br><br>
+  <% end %>
+</div>
+
+<div class = "profile-title">Your Restaurants</div>
+<div class="button" id="new-restaurant">
+  <%= link_to "Create a new restaurant", new_user_restaurant_path(@user) %>
+</div>
+
+<div class="restaurantlist">
+  <% @user.owned_restaurants.each do |restaurant| %>
+  <div class="restaurant">
+    <div id="restaurant-info">
+      <h2><%= restaurant.name %></h2>
+      <div class="button" id="owner-function">
+        <%= link_to "View Restaurant Details", restaurant_path(restaurant) %>
+        <%= link_to "View All Reservations", viewall_path(restaurant) %>
+        <%= link_to 'Edit Information', edit_restaurant_path(restaurant) %>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <% end %>

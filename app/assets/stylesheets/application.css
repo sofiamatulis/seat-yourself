@@ -1,0 +1,117 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+#container {
+  min-height: 100%;
+  position: relative;
+ }
+
+#body {
+  padding-bottom: 40px;
+}
+
+#logo img{
+  width:236px;
+}
+
+ #logo{
+   letter-spacing: 3px;
+   font-size: 35px;
+   font-family: 'Playfair Display', serif;
+   color:#5e0231;
+ }
+
+ .menu-bar{
+   padding-top: 18px;
+   padding-left: 20px;
+   background-color: white;
+ }
+
+ .userinfo{
+   float:right;
+   font-family: 'Muli', sans-serif;
+   letter-spacing: 2px;
+   padding-top: 12px;
+   text-align: center;
+ }
+
+ .userinfo a{
+   letter-spacing: 2px;
+   text-decoration: none;
+   text-transform: capitalize;
+   color:#5e0231;
+ }
+
+ #sign-up-button{
+   padding:0px 18px;
+ }
+
+ #log-in-button{
+   padding:0px 18px;
+ }
+
+ #welcome-message{
+   padding:0px 18px;
+ }
+
+ #log-out-button{
+   padding:0px 18px;
+ }
+
+ body{
+   margin:0px;
+   min-width: 540px;
+ }
+
+.footer {
+  position: absolute;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'Muli', sans-serif;
+  background-color: #5e0231;
+  height: 40px;
+  width: 100%;
+}
+
+.footer p {
+  letter-spacing: 1px;
+  margin: 0;
+  color: white;
+}
+
+.footer .left {
+  float: left;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.footer .center {
+  margin-left: 350px;
+  margin-right: 300px;
+}
+
+.footer .center img {
+  width: 40px;
+  height: 40px;
+  padding-left: 10px;
+}
+
+.footer .right {
+  float: right;
+  text-align: right;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}

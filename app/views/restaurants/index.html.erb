@@ -1,0 +1,30 @@
+<div class= "mn_img_container">
+  <div id = "main-image">
+    <%= image_tag("pexel-breakfast.jpg") %>
+    <div id = "image-text-header">Good friends. Good food. Good times.</div>
+    <div id = "image-subtext">Make a Reservation.</div>
+    <div class="search">
+      <%= form_tag(restaurants_path, :method => "get", id: "search-form") do %>
+        <%= text_field_tag :search, params[:search], placeholder: "Search by Name" %>
+        <span class="actions"><%= submit_tag "Search" %></span>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="list-container">
+  <% @restaurants.each do |restaurant| %>
+  <ul class="list-items">
+    <li id="image">
+      <% if restaurant.photo == "" %>
+        <%= link_to image_tag('image.jpg'), restaurant_path(restaurant) %>
+      <% else %>
+        <%= link_to image_tag(restaurant.photo), restaurant_path(restaurant) %><br>
+      <% end %>
+    <li id="name"><h2><%= link_to restaurant.name, restaurant_path(restaurant) %></h2></li>
+    <li id="address">
+       <h4><%=image_tag "location_icon.png"%> <%= restaurant.address %></h4>
+    </li>
+  </ul>
+  <% end %>
+</div>

@@ -1,0 +1,33 @@
+
+<div class="reservation-header">
+<div class="show-image">
+  <% if @restaurant.photo == "" %>
+    <%= image_tag "image.jpg" %><br>
+  <% else %>
+    <%= image_tag @restaurant.photo %><br />
+  <% end %>
+    <h1>Reservations (Total: <%= @reservations.length %> )</h1>
+  </div>
+</div>
+
+<div class="reservationlist">
+  <% @reservations.each do |reservation| %>
+  <div class="reservation">
+    <p id="reservation-info">
+      <% if reservation.user_id %>
+       Name: <%= User.find(reservation.user_id).name %><br>
+       Phone: <%= User.find(reservation.user_id).phone %><br>
+       <% else %>
+       Name: Not specified<br>
+       Phone: Not provided<br>
+       <% end %>
+       Party Size: <%= reservation.party_size %><br>
+       Date: <%= reservation.date %><br>
+       Time: <%= reservation.time.strftime("%I %p") %><br>
+       Special Requests: <%= reservation.comment %><br>
+       <%= link_to "Cancel this reservation", "/restaurants/#{reservation.restaurant_id}/reservations/#{reservation.id}", method: :delete, data: {confirm: "Are you sure you want to cancel this reservation? This cannot be undone."} %><br>
+    </p>
+  </div>
+    <br><br>
+  <% end %>
+</div>

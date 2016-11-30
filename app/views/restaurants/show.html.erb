@@ -1,0 +1,17 @@
+
+
+<div class="show-image">
+  <% if @restaurant.photo == "" %>
+        <%= image_tag "image.jpg" %><br>
+      <% else %>
+        <%= image_tag @restaurant.photo %><br />
+      <% end %>
+  <h1><%= @restaurant.name %></h1>
+  <div class="button"><%= link_to "Make a Reservation", new_restaurant_reservation_url(@restaurant) %></div>
+</div>
+<div class="info">
+  <h4>Address: <%= @restaurant.address %></h4><br />
+  <h4>Phone: <%= @restaurant.phone %></h4><br />
+  <h4>Website: <%= @restaurant.website %></h4><br />
+  <h4>Hours of Operation: <%= @restaurant.opening_hours.strftime("%I %p") %> - <%= @restaurant.closing_hours.strftime("%I %p") %></h4>
+</div>

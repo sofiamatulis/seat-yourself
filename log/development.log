@@ -1,0 +1,880 @@
+
+
+Started GET "/" for ::1 at 2016-09-06 09:12:20 -0400
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.6) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.6) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/sofiamatulis/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/sofiamatulis/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/sofiamatulis/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/sofiamatulis/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /Users/sofiamatulis/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/sofiamatulis/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/sofiamatulis/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (87.8ms)
+  Rendered /Users/sofiamatulis/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/sofiamatulis/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/sofiamatulis/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/sofiamatulis/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/sofiamatulis/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (87.4ms)
+  Rendered /Users/sofiamatulis/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/sofiamatulis/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/sofiamatulis/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (184.0ms)
+  [1m[36m (1.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.7ms)[0m  select sqlite_version(*)
+  [1m[36m (1.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20160831192125)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "phone" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160831192125"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Migrating to CreateReservations (20160831192859)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "reservations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "restaurant_id" integer, "party_size" integer, "date" date, "time" time, "comment" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160831192859"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Migrating to CreateRestaurants (20160831193047)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "restaurants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "phone" varchar, "capacity" integer, "opening_hours" integer, "closing_hours" integer, "website" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160831193047"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Migrating to AddCategoryToRestaurants (20160901204529)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  ALTER TABLE "restaurants" ADD "category" varchar
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160901204529"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Migrating to AddPasswordDigestToUsers (20160902170246)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "users" ADD "password_digest" varchar
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160902170246"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Migrating to AddPhotoToRestaurant (20160902183728)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "restaurants" ADD "photo" varchar
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160902183728"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Migrating to AddUserToRestaurant (20160902195612)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "restaurants" ADD "owner_id" integer
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160902195612"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to RemoveOpeningHoursFromRestaurants (20160902195958)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  CREATE TEMPORARY TABLE "arestaurants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "phone" varchar, "capacity" integer, "opening_hours" integer, "closing_hours" integer, "website" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "category" varchar, "photo" varchar, "owner_id" integer) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "restaurants"[0m
+  [1m[35m (1.2ms)[0m  DROP TABLE "restaurants"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "restaurants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "phone" varchar, "capacity" integer, "closing_hours" integer, "website" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "category" varchar, "photo" varchar, "owner_id" integer) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "arestaurants"
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "arestaurants"[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160902195958"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+Migrating to RemoveClosingHoursFromRestaurants (20160902200016)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TEMPORARY TABLE "arestaurants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "phone" varchar, "capacity" integer, "closing_hours" integer, "website" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "category" varchar, "photo" varchar, "owner_id" integer) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "restaurants"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "restaurants"[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "restaurants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "phone" varchar, "capacity" integer, "website" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "category" varchar, "photo" varchar, "owner_id" integer) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "arestaurants"[0m
+  [1m[35m (0.1ms)[0m  DROP TABLE "arestaurants"
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160902200016"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Migrating to AddOpeningHoursFromRestaurants (20160902200224)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "restaurants" ADD "opening_hours" time
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160902200224"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Migrating to AddClosingHoursFromRestaurants (20160902200243)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "restaurants" ADD "closing_hours" time
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160902200243"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2016-09-06 09:12:41 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RestaurantsController#index as HTML
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT "restaurants".* FROM "restaurants"  ORDER BY created_at DESC
+  Rendered restaurants/index.html.erb within layouts/application (1899.3ms)
+Completed 200 OK in 2005ms (Views: 1980.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/reservations.self-db47a9e4ca37d93a6ca8ca4faa901ec1222fbbf9e08edb132719e72aef5d9bd2.css?body=1" for ::1 at 2016-09-06 09:12:43 -0400
+
+
+Started GET "/assets/restaurants.self-b46ff646bee7b57e3a83a8f91daad074019c881aa66de39783bdb3e26a2d6995.css?body=1" for ::1 at 2016-09-06 09:12:43 -0400
+
+
+Started GET "/assets/sessions.self-f17c07c7f17b84f85a2e842cac8cadf101daefc11a3021a0e94d08c8e5cb39fc.css?body=1" for ::1 at 2016-09-06 09:12:43 -0400
+
+
+Started GET "/assets/user.self-bc772a44aeb82e52031ed24f182851b647ba2a92fde32344ab75af445f0502b4.css?body=1" for ::1 at 2016-09-06 09:12:44 -0400
+
+
+Started GET "/assets/application.self-5fe704b0c11c56c9eb0bed416e971fd434e19d8a080a745a7a9da0f532d9f5d3.css?body=1" for ::1 at 2016-09-06 09:12:44 -0400
+
+
+Started GET "/" for ::1 at 2016-09-06 19:33:37 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RestaurantsController#index as HTML
+  [1m[35mRestaurant Load (0.5ms)[0m  SELECT "restaurants".* FROM "restaurants"  ORDER BY created_at DESC
+  Rendered restaurants/index.html.erb within layouts/application (399.0ms)
+Completed 200 OK in 520ms (Views: 494.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-09-06 19:33:38 -0400
+Processing by RestaurantsController#index as HTML
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"  ORDER BY created_at DESC[0m
+  Rendered restaurants/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 29ms (Views: 28.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/reservations.self-5f643112f014a4eaf73444e36881b57d6f402fb6aaf08b05fd51702b96181936.css?body=1" for ::1 at 2016-09-06 19:33:38 -0400
+
+
+Started GET "/assets/user.self-bc772a44aeb82e52031ed24f182851b647ba2a92fde32344ab75af445f0502b4.css?body=1" for ::1 at 2016-09-06 19:33:38 -0400
+
+
+Started GET "/assets/sessions.self-e2f02629466b89741568e191f5c0245935118bcf410d9af0a4b4f34104911d95.css?body=1" for ::1 at 2016-09-06 19:33:38 -0400
+
+
+Started GET "/assets/application.self-3e11032490db61e7b7fdc4d951f71ff434c05bdefedfe33f5d88c57a4810a6b4.css?body=1" for ::1 at 2016-09-06 19:33:38 -0400
+
+
+Started GET "/assets/restaurants.self-b46ff646bee7b57e3a83a8f91daad074019c881aa66de39783bdb3e26a2d6995.css?body=1" for ::1 at 2016-09-06 19:33:38 -0400
+
+
+Started GET "/users/new" for ::1 at 2016-09-06 19:34:11 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (23.9ms)
+  Rendered users/new.html.erb within layouts/application (29.9ms)
+Completed 200 OK in 77ms (Views: 66.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/pexel-food.jpg" for ::1 at 2016-09-06 19:34:11 -0400
+
+
+Started POST "/users" for ::1 at 2016-09-06 19:34:51 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iyWT/UW026m8aRHnhpoCMySb1oTWnJjSm3fHpBFdl2Uzp23WpjimlpbouvfxwwX67T8Cc7QMzHoCcSUepfCpWw==", "user"=>{"name"=>"henrique", "phone"=>"29293803", "email"=>"henrique@hotmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'henrique@hotmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "users" ("name", "phone", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "henrique"], ["phone", "29293803"], ["email", "henrique@hotmail.com"], ["password_digest", "$2a$10$YEwYmHOW6kXTs6lZXPWpPOZ5agDdduco5dTE/8y6vUR/RP3b3Zr7i"], ["created_at", "2016-09-06 23:34:51.209958"], ["updated_at", "2016-09-06 23:34:51.209958"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/restaurants
+Completed 302 Found in 108ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/restaurants" for ::1 at 2016-09-06 19:34:51 -0400
+Processing by RestaurantsController#index as HTML
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT "restaurants".* FROM "restaurants"  ORDER BY created_at DESC
+  Rendered restaurants/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 36ms (Views: 34.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for ::1 at 2016-09-06 19:34:52 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 42ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/food-salad.jpg" for ::1 at 2016-09-06 19:34:53 -0400
+
+
+Started POST "/sessions" for ::1 at 2016-09-06 19:35:00 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JYTouNK2l5K4xpAj0y12LKi6M8ks27h5IvY1kVHpdBedBhaTMTrqrZJHOzOkdHHlYR7nPk5L7NG78Ncr5URKKQ==", "email"=>"henrique@hotmail.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "henrique@hotmail.com"]]
+Redirected to http://localhost:3000/restaurants
+Completed 302 Found in 94ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurants" for ::1 at 2016-09-06 19:35:00 -0400
+Processing by RestaurantsController#index as HTML
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT "restaurants".* FROM "restaurants"  ORDER BY created_at DESC
+  Rendered restaurants/index.html.erb within layouts/application (2.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 44ms (Views: 43.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1" for ::1 at 2016-09-06 19:35:04 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mReservation Load (0.5ms)[0m  [1mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."owner_id" = ?  [["owner_id", 1]]
+  Rendered users/show.html.erb within layouts/application (23.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 61ms (Views: 59.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/food-salad-0395616da3f8c8757df1fac1f955db57e0b1aad3a6201d8d820aa62a1ecf9f26.jpg" for ::1 at 2016-09-06 19:35:04 -0400
+
+
+Started GET "/users/1/edit" for ::1 at 2016-09-06 19:35:08 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/edit.html.erb within layouts/application (5.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 41ms (Views: 39.9ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/users/1" for ::1 at 2016-09-06 19:35:11 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eTb75dV+2ghPnTxQ9qh9jskbRD1mvgA/pEm4nu9QmW/BtAXONvKnN2Ucl0CB8XpHAL+QygQuVJc9T1okW/2nUQ==", "user"=>{"name"=>"henrique", "phone"=>"29293803", "email"=>"henrique@hotmail.com"}, "commit"=>"Update User", "id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'henrique@hotmail.com' AND "users"."id" != 1) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for ::1 at 2016-09-06 19:35:11 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mReservation Load (0.1ms)[0m  [1mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."owner_id" = ?  [["owner_id", 1]]
+  Rendered users/show.html.erb within layouts/application (4.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/restaurants/new" for ::1 at 2016-09-06 19:35:13 -0400
+Processing by RestaurantsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered restaurants/_form.html.erb (16.8ms)
+  Rendered restaurants/new.html.erb within layouts/application (20.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 59ms (Views: 49.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users/1/restaurants" for ::1 at 2016-09-06 19:35:56 -0400
+Processing by RestaurantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XsXPx51+8vscd2HajC38jdiGTEIT9uhzRDpDJMK4LnXmRzHsfvKPxDb2ysr7dPtEESKYtXFmvNvdPKGedhUQSw==", "restaurant"=>{"name"=>"Henrique's pizza", "address"=>"123 pizza road", "phone"=>"2939339", "capacity"=>"5", "opening_hours(1i)"=>"2016", "opening_hours(2i)"=>"9", "opening_hours(3i)"=>"6", "opening_hours(4i)"=>"06", "opening_hours(5i)"=>"35", "closing_hours(1i)"=>"2016", "closing_hours(2i)"=>"9", "closing_hours(3i)"=>"6", "closing_hours(4i)"=>"15", "closing_hours(5i)"=>"35", "website"=>"www.henrique.com", "photo"=>"data:image/jpeg;base64,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"}, "commit"=>"Create Restaurant", "user_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "restaurants" ("name", "address", "phone", "capacity", "website", "photo", "opening_hours", "closing_hours", "owner_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Henrique's pizza"], ["address", "123 pizza road"], ["phone", "2939339"], ["capacity", 5], ["website", "www.henrique.com"], ["photo", "data:image/jpeg;base64,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"], ["opening_hours", "2016-09-06 06:35:00.000000"], ["closing_hours", "2016-09-06 15:35:00.000000"], ["owner_id", 1], ["created_at", "2016-09-06 23:35:56.750352"], ["updated_at", "2016-09-06 23:35:56.750352"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/1/restaurants/1
+Completed 302 Found in 14ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/users/1/restaurants/1" for ::1 at 2016-09-06 19:35:56 -0400
+Processing by RestaurantsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 36ms (Views: 34.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurants/1/reservations/new" for ::1 at 2016-09-06 19:36:03 -0400
+Processing by ReservationsController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered reservations/_form.html.erb (7.4ms)
+  Rendered reservations/new.html.erb within layouts/application (10.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 54ms (Views: 47.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/restaurants/1/reservations" for ::1 at 2016-09-06 19:36:19 -0400
+Processing by ReservationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7OC0uS75eY02xERw0ca7Yp76NwVxpgLMeB8+qRozJnpUYkqSzXUEshxF72Cmn7yrV17j8hM2VmThGdwTrp4YRA==", "reservation"=>{"party_size"=>"1", "date"=>"2016-09-23", "time(1i)"=>"2016", "time(2i)"=>"9", "time(3i)"=>"6", "time(4i)"=>"11", "time(5i)"=>"36", "comment"=>"vegan"}, "commit"=>"Create Reservation", "restaurant_id"=>"1"}
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT SUM("reservations"."party_size") FROM "reservations" WHERE ("reservations"."time" BETWEEN '2016-09-06 11:00:00.000000' AND '2016-09-06 11:59:59.999999')
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "reservations" ("party_size", "date", "comment", "time", "restaurant_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["party_size", 1], ["date", "2016-09-23"], ["comment", "vegan"], ["time", "2016-09-06 11:36:00.000000"], ["restaurant_id", 1], ["user_id", 1], ["created_at", "2016-09-06 23:36:19.539476"], ["updated_at", "2016-09-06 23:36:19.539476"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/restaurants/1/reservations/1
+Completed 302 Found in 93ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/restaurants/1/reservations/1" for ::1 at 2016-09-06 19:36:19 -0400
+Processing by ReservationsController#show as HTML
+  Parameters: {"restaurant_id"=>"1", "id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mReservation Load (0.2ms)[0m  SELECT  "reservations".* FROM "reservations" WHERE "reservations"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered reservations/show.html.erb within layouts/application (1.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 34ms (Views: 31.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-09-06 19:36:24 -0400
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 31ms (Views: 30.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for ::1 at 2016-09-06 19:36:28 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mReservation Load (0.1ms)[0m  [1mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."owner_id" = ?[0m  [["owner_id", 1]]
+  Rendered users/show.html.erb within layouts/application (6.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 38ms (Views: 36.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/restaurants" for ::1 at 2016-09-06 19:36:35 -0400
+Processing by RestaurantsController#index as HTML
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"  ORDER BY created_at DESC[0m
+  Rendered restaurants/index.html.erb within layouts/application (5.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 36ms (Views: 35.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/location_icon-19b88e54fe1b6dd85d45f67f7fe328d5b47bf4995e676e6a314fd61c21ef90fd.png" for ::1 at 2016-09-06 19:36:35 -0400
+
+
+Started GET "/restaurants?utf8=%E2%9C%93&search=pizza&commit=Search" for ::1 at 2016-09-06 19:36:49 -0400
+Processing by RestaurantsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"pizza", "commit"=>"Search"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE (name LIKE '%pizza%')  ORDER BY created_at DESC[0m
+  Rendered restaurants/index.html.erb within layouts/application (4.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/restaurants" for ::1 at 2016-09-06 19:36:57 -0400
+Processing by RestaurantsController#index as HTML
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"  ORDER BY created_at DESC[0m
+  Rendered restaurants/index.html.erb within layouts/application (4.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 41ms (Views: 39.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-09-18 13:43:53 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RestaurantsController#index as HTML
+  [1m[35mRestaurant Load (1.2ms)[0m  SELECT "restaurants".* FROM "restaurants"  ORDER BY created_at DESC
+  Rendered restaurants/index.html.erb within layouts/application (331.2ms)
+Completed 200 OK in 456ms (Views: 428.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-18 13:43:54 -0400
+Processing by RestaurantsController#index as HTML
+  [1m[36mRestaurant Load (0.4ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"  ORDER BY created_at DESC[0m
+  Rendered restaurants/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 76ms (Views: 71.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/reservations.self-5f643112f014a4eaf73444e36881b57d6f402fb6aaf08b05fd51702b96181936.css?body=1" for ::1 at 2016-09-18 13:43:54 -0400
+
+
+Started GET "/assets/reservations.self-5f643112f014a4eaf73444e36881b57d6f402fb6aaf08b05fd51702b96181936.css?body=1" for ::1 at 2016-09-18 13:43:54 -0400
+
+
+Started GET "/assets/restaurants.self-b46ff646bee7b57e3a83a8f91daad074019c881aa66de39783bdb3e26a2d6995.css?body=1" for ::1 at 2016-09-18 13:43:54 -0400
+
+
+Started GET "/assets/application.self-3e11032490db61e7b7fdc4d951f71ff434c05bdefedfe33f5d88c57a4810a6b4.css?body=1" for ::1 at 2016-09-18 13:43:54 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-09-18 13:43:54 -0400
+
+
+Started GET "/assets/user.self-bc772a44aeb82e52031ed24f182851b647ba2a92fde32344ab75af445f0502b4.css?body=1" for ::1 at 2016-09-18 13:43:54 -0400
+
+
+Started GET "/assets/application.self-3e11032490db61e7b7fdc4d951f71ff434c05bdefedfe33f5d88c57a4810a6b4.css?body=1" for ::1 at 2016-09-18 13:43:54 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-09-18 13:43:54 -0400
+
+
+Started GET "/assets/sessions.self-e2f02629466b89741568e191f5c0245935118bcf410d9af0a4b4f34104911d95.css?body=1" for ::1 at 2016-09-18 13:43:54 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-09-18 13:43:54 -0400
+
+
+Started GET "/assets/sessions.self-e2f02629466b89741568e191f5c0245935118bcf410d9af0a4b4f34104911d95.css?body=1" for ::1 at 2016-09-18 13:43:54 -0400
+
+
+Started GET "/assets/user.self-bc772a44aeb82e52031ed24f182851b647ba2a92fde32344ab75af445f0502b4.css?body=1" for ::1 at 2016-09-18 13:43:54 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-09-18 13:43:54 -0400
+
+
+Started GET "/assets/restaurants.self-b46ff646bee7b57e3a83a8f91daad074019c881aa66de39783bdb3e26a2d6995.css?body=1" for ::1 at 2016-09-18 13:43:54 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-09-18 13:43:54 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-09-18 13:43:54 -0400
+
+
+Started GET "/assets/restaurants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-18 13:43:54 -0400
+
+
+Started GET "/assets/restaurants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-18 13:43:54 -0400
+
+
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-18 13:43:54 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-18 13:43:54 -0400
+
+
+Started GET "/assets/seatyourself-logo-e3b7698f79c1265fd7ca081d590513df0cca00ffc25c066026564f3976f80ab2.png" for ::1 at 2016-09-18 13:43:54 -0400
+
+
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-18 13:43:54 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-18 13:43:54 -0400
+
+
+Started GET "/assets/seatyourself-logo-e3b7698f79c1265fd7ca081d590513df0cca00ffc25c066026564f3976f80ab2.png" for ::1 at 2016-09-18 13:43:54 -0400
+
+
+Started GET "/assets/pexel-breakfast-eb8f6728170fa2ee5f84b56ed115011dc2bd7659d166a3cf54cc58684746949b.jpg" for ::1 at 2016-09-18 13:43:54 -0400
+
+
+Started GET "/assets/pexel-breakfast-eb8f6728170fa2ee5f84b56ed115011dc2bd7659d166a3cf54cc58684746949b.jpg" for ::1 at 2016-09-18 13:43:54 -0400
+
+
+Started GET "/assets/location_icon-19b88e54fe1b6dd85d45f67f7fe328d5b47bf4995e676e6a314fd61c21ef90fd.png" for ::1 at 2016-09-18 13:43:54 -0400
+
+
+Started GET "/assets/location_icon-19b88e54fe1b6dd85d45f67f7fe328d5b47bf4995e676e6a314fd61c21ef90fd.png" for ::1 at 2016-09-18 13:43:54 -0400
+
+
+Started GET "/" for ::1 at 2016-09-18 13:44:06 -0400
+Processing by RestaurantsController#index as HTML
+  [1m[35mRestaurant Load (0.3ms)[0m  SELECT "restaurants".* FROM "restaurants"  ORDER BY created_at DESC
+  Rendered restaurants/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-09-18 13:46:47 -0400
+Processing by RestaurantsController#index as HTML
+  [1m[36mRestaurant Load (1.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"  ORDER BY created_at DESC[0m
+  Rendered restaurants/index.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 96ms (Views: 85.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2016-11-01 23:34:34 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RestaurantsController#index as HTML
+  [1m[35mRestaurant Load (2.3ms)[0m  SELECT "restaurants".* FROM "restaurants"  ORDER BY created_at DESC
+  Rendered restaurants/index.html.erb within layouts/application (355.5ms)
+Completed 200 OK in 483ms (Views: 452.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/restaurants.self-b46ff646bee7b57e3a83a8f91daad074019c881aa66de39783bdb3e26a2d6995.css?body=1" for ::1 at 2016-11-01 23:34:35 -0400
+
+
+Started GET "/assets/application.self-3e11032490db61e7b7fdc4d951f71ff434c05bdefedfe33f5d88c57a4810a6b4.css?body=1" for ::1 at 2016-11-01 23:34:35 -0400
+
+
+Started GET "/assets/sessions.self-e2f02629466b89741568e191f5c0245935118bcf410d9af0a4b4f34104911d95.css?body=1" for ::1 at 2016-11-01 23:34:36 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-11-01 23:34:36 -0400
+
+
+Started GET "/assets/reservations.self-5f643112f014a4eaf73444e36881b57d6f402fb6aaf08b05fd51702b96181936.css?body=1" for ::1 at 2016-11-01 23:34:36 -0400
+
+
+Started GET "/assets/user.self-bc772a44aeb82e52031ed24f182851b647ba2a92fde32344ab75af445f0502b4.css?body=1" for ::1 at 2016-11-01 23:34:36 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-11-01 23:34:36 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-11-01 23:34:36 -0400
+
+
+Started GET "/assets/restaurants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-11-01 23:34:36 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-11-01 23:34:36 -0400
+
+
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-11-01 23:34:36 -0400
+
+
+Started GET "/assets/seatyourself-logo-e3b7698f79c1265fd7ca081d590513df0cca00ffc25c066026564f3976f80ab2.png" for ::1 at 2016-11-01 23:34:36 -0400
+
+
+Started GET "/assets/pexel-breakfast-eb8f6728170fa2ee5f84b56ed115011dc2bd7659d166a3cf54cc58684746949b.jpg" for ::1 at 2016-11-01 23:34:36 -0400
+
+
+Started GET "/assets/location_icon-19b88e54fe1b6dd85d45f67f7fe328d5b47bf4995e676e6a314fd61c21ef90fd.png" for ::1 at 2016-11-01 23:34:36 -0400
+
+
+Started GET "/restaurants?utf8=%E2%9C%93&search=pizza&commit=Search" for ::1 at 2016-11-01 23:34:43 -0400
+Processing by RestaurantsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"pizza", "commit"=>"Search"}
+  [1m[36mRestaurant Load (0.6ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE (name LIKE '%pizza%')  ORDER BY created_at DESC[0m
+  Rendered restaurants/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 110ms (Views: 107.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-11-01 23:34:45 -0400
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRestaurant Load (1.3ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 102ms (Views: 84.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/sessions/new" for ::1 at 2016-11-01 23:34:50 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 36ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/food-salad.jpg" for ::1 at 2016-11-01 23:34:50 -0400
+
+
+Started GET "/users/new" for ::1 at 2016-11-01 23:34:52 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (26.5ms)
+  Rendered users/new.html.erb within layouts/application (45.9ms)
+Completed 200 OK in 115ms (Views: 101.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/pexel-food.jpg" for ::1 at 2016-11-01 23:34:52 -0400
+
+
+Started POST "/users" for ::1 at 2016-11-01 23:35:04 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ARmicFxV2HPftxIUREpIoHRH1WtbYpkhYvDQhrYJd68hPZxdcEa5fEvIQYmKHu6wnq0jmcV2yzO2vhip2HmjXw==", "user"=>{"name"=>"Ana", "phone"=>"129393", "email"=>"ana@mail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ana@mail.com' LIMIT 1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "users" ("name", "phone", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Ana"], ["phone", "129393"], ["email", "ana@mail.com"], ["password_digest", "$2a$10$V10JNE984STzaEK1RrnT3ercp98yg.SZ1lyedw7SywJce.XDoKtC."], ["created_at", "2016-11-02 03:35:04.184658"], ["updated_at", "2016-11-02 03:35:04.184658"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/restaurants
+Completed 302 Found in 127ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/restaurants" for ::1 at 2016-11-01 23:35:04 -0400
+Processing by RestaurantsController#index as HTML
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"  ORDER BY created_at DESC[0m
+  Rendered restaurants/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 37ms (Views: 35.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sessions/new" for ::1 at 2016-11-01 23:35:11 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 61ms (Views: 59.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/food-salad.jpg" for ::1 at 2016-11-01 23:35:11 -0400
+
+
+Started POST "/sessions" for ::1 at 2016-11-01 23:35:15 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MIBrncQhXKDsS4kVnJHQdl8B4bUPCZA1lOqpMLhBgoYQpFWw6DI9r3g02ohSxXZmtesXR5EdwidApGEf1jFWdg==", "email"=>"ana@mail.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "ana@mail.com"]]
+Redirected to http://localhost:3000/restaurants
+Completed 302 Found in 90ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurants" for ::1 at 2016-11-01 23:35:15 -0400
+Processing by RestaurantsController#index as HTML
+  [1m[36mRestaurant Load (0.4ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"  ORDER BY created_at DESC[0m
+  Rendered restaurants/index.html.erb within layouts/application (5.4ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 77ms (Views: 75.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/2" for ::1 at 2016-11-01 23:35:21 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mReservation Load (0.5ms)[0m  SELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = ?  [["user_id", 2]]
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."owner_id" = ?[0m  [["owner_id", 2]]
+  Rendered users/show.html.erb within layouts/application (31.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 70ms (Views: 67.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/food-salad-0395616da3f8c8757df1fac1f955db57e0b1aad3a6201d8d820aa62a1ecf9f26.jpg" for ::1 at 2016-11-01 23:35:21 -0400
+DEPRECATION WARNING: Passing a string to ActiveRecord::Base.establish_connection for a configuration lookup is deprecated, please pass a symbol (:postgresql) instead. (called from mon_synchronize at /Users/sofiamatulis/.rbenv/versions/2.3.1/lib/ruby/2.3.0/monitor.rb:214)
+
+
+Started GET "/" for ::1 at 2016-11-30 14:49:00 -0500
+DEPRECATION WARNING: Passing a string to ActiveRecord::Base.establish_connection for a configuration lookup is deprecated, please pass a symbol (:postgresql) instead. (called from service at /Users/sofiamatulis/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140)
+
+ActiveRecord::AdapterNotSpecified ('postgresql' database is not configured. Available: ["default", "adapter", "pool", "timeout", "development", "database"]):
+  activerecord (4.2.6) lib/active_record/connection_adapters/connection_specification.rb:248:in `resolve_symbol_connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/connection_specification.rb:231:in `resolve_string_connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/connection_specification.rb:213:in `resolve_connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/connection_specification.rb:139:in `resolve'
+  activerecord (4.2.6) lib/active_record/connection_adapters/connection_specification.rb:151:in `block in resolve_all'
+  activerecord (4.2.6) lib/active_record/connection_adapters/connection_specification.rb:150:in `each'
+  activerecord (4.2.6) lib/active_record/connection_adapters/connection_specification.rb:150:in `resolve_all'
+  activerecord (4.2.6) lib/active_record/connection_handling.rb:69:in `resolve'
+  activerecord (4.2.6) lib/active_record/core.rb:46:in `configurations='
+  activerecord (4.2.6) lib/active_record/railtie.rb:117:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.2.6) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.2.6) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.2.6) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.2.6) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.2.6) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.2.6) lib/active_record/base.rb:315:in `<module:ActiveRecord>'
+  activerecord (4.2.6) lib/active_record/base.rb:26:in `<top (required)>'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:274:in `require'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:274:in `block in require'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:240:in `load_dependency'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:274:in `require'
+  activerecord (4.2.6) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.6) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/sofiamatulis/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/sofiamatulis/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/sofiamatulis/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/sofiamatulis/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/sofiamatulis/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.4ms)
+  Rendered /Users/sofiamatulis/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/sofiamatulis/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (100.6ms)
+  Rendered /Users/sofiamatulis/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/sofiamatulis/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/sofiamatulis/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/sofiamatulis/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/sofiamatulis/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (90.7ms)
+  Rendered /Users/sofiamatulis/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/sofiamatulis/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/sofiamatulis/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (205.2ms)
+  [1m[36m (80.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (11.4ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20160831192125)
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36m (19.2ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "name" character varying, "phone" character varying, "email" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (2.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160831192125"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateReservations (20160831192859)
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (16.9ms)[0m  [1mCREATE TABLE "reservations" ("id" serial primary key, "user_id" integer, "restaurant_id" integer, "party_size" integer, "date" date, "time" time, "comment" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160831192859"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+Migrating to CreateRestaurants (20160831193047)
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (7.8ms)[0m  [1mCREATE TABLE "restaurants" ("id" serial primary key, "name" character varying, "address" character varying, "phone" character varying, "capacity" integer, "opening_hours" integer, "closing_hours" integer, "website" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160831193047"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Migrating to AddCategoryToRestaurants (20160901204529)
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (8.7ms)[0m  [1mALTER TABLE "restaurants" ADD "category" character varying[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160901204529"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to AddPasswordDigestToUsers (20160902170246)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (1.8ms)[0m  [1mALTER TABLE "users" ADD "password_digest" character varying[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160902170246"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Migrating to AddPhotoToRestaurant (20160902183728)
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36m (1.1ms)[0m  [1mALTER TABLE "restaurants" ADD "photo" character varying[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160902183728"]]
+  [1m[36m (2.1ms)[0m  [1mCOMMIT[0m
+Migrating to AddUserToRestaurant (20160902195612)
+  [1m[35m (6.2ms)[0m  BEGIN
+  [1m[36m (1.2ms)[0m  [1mALTER TABLE "restaurants" ADD "owner_id" integer[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160902195612"]]
+  [1m[36m (2.7ms)[0m  [1mCOMMIT[0m
+Migrating to RemoveOpeningHoursFromRestaurants (20160902195958)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (7.4ms)[0m  [1mALTER TABLE "restaurants" DROP "opening_hours"[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160902195958"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Migrating to RemoveClosingHoursFromRestaurants (20160902200016)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "restaurants" DROP "closing_hours"[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160902200016"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to AddOpeningHoursFromRestaurants (20160902200224)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (1.1ms)[0m  [1mALTER TABLE "restaurants" ADD "opening_hours" time[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160902200224"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to AddClosingHoursFromRestaurants (20160902200243)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "restaurants" ADD "closing_hours" time[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160902200243"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (11.6ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'reservations'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (5.6ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'restaurants'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (10.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/" for ::1 at 2016-11-30 15:01:23 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RestaurantsController#index as HTML
+  [1m[35mRestaurant Load (2.7ms)[0m  SELECT "restaurants".* FROM "restaurants"  ORDER BY created_at DESC
+  Rendered restaurants/index.html.erb within layouts/application (337.5ms)
+Completed 200 OK in 490ms (Views: 459.1ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/reservations.self-5f643112f014a4eaf73444e36881b57d6f402fb6aaf08b05fd51702b96181936.css?body=1" for ::1 at 2016-11-30 15:01:24 -0500
+
+
+Started GET "/assets/restaurants.self-b46ff646bee7b57e3a83a8f91daad074019c881aa66de39783bdb3e26a2d6995.css?body=1" for ::1 at 2016-11-30 15:01:24 -0500
+
+
+Started GET "/assets/user.self-bc772a44aeb82e52031ed24f182851b647ba2a92fde32344ab75af445f0502b4.css?body=1" for ::1 at 2016-11-30 15:01:24 -0500
+
+
+Started GET "/assets/sessions.self-e2f02629466b89741568e191f5c0245935118bcf410d9af0a4b4f34104911d95.css?body=1" for ::1 at 2016-11-30 15:01:24 -0500
+
+
+Started GET "/assets/application.self-3e11032490db61e7b7fdc4d951f71ff434c05bdefedfe33f5d88c57a4810a6b4.css?body=1" for ::1 at 2016-11-30 15:01:24 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-11-30 15:01:24 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-11-30 15:01:24 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-11-30 15:01:24 -0500
+
+
+Started GET "/assets/reservations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-11-30 15:01:24 -0500
+
+
+Started GET "/assets/restaurants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-11-30 15:01:24 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-11-30 15:01:24 -0500
+
+
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-11-30 15:01:24 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-11-30 15:01:24 -0500
+
+
+Started GET "/assets/seatyourself-logo-e3b7698f79c1265fd7ca081d590513df0cca00ffc25c066026564f3976f80ab2.png" for ::1 at 2016-11-30 15:01:24 -0500
+
+
+Started GET "/assets/pexel-breakfast-eb8f6728170fa2ee5f84b56ed115011dc2bd7659d166a3cf54cc58684746949b.jpg" for ::1 at 2016-11-30 15:01:24 -0500
+
+
+Started GET "/" for ::1 at 2016-11-30 15:13:35 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RestaurantsController#index as HTML
+  [1m[35mRestaurant Load (2.3ms)[0m  SELECT "restaurants".* FROM "restaurants"  ORDER BY created_at DESC
+  Rendered restaurants/index.html.erb within layouts/application (289.7ms)
+Completed 200 OK in 434ms (Views: 405.4ms | ActiveRecord: 4.2ms)

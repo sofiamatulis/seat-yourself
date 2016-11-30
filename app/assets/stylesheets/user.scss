@@ -1,0 +1,144 @@
+.sign-up{
+  background-image: url('pexel-food.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.restaurantlist {
+  margin-top: 50px;
+}
+
+.restaurant {
+  border: 2px solid black;
+  width: 50%;
+  margin: auto;
+}
+
+#restaurant-info {
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+
+
+
+.profile-title{
+  font-family: 'Muli', sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+
+#user-form {
+  margin:auto;
+  margin-top: 3%;
+  margin-bottom: 70px;
+  width: 300px;
+  padding: 50px 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#user-form .field{
+  text-align: center
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+}
+
+.user-prof-button{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 23px;
+}
+
+.profile-reserve{
+  padding-bottom: 15px;
+}
+
+.profile-reserve .reservationlist {
+  margin-top: 30px;
+}
+
+.profile-reserve .reservation {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.profile-title{
+  padding-top: 30px;
+}
+
+.profile-rest .restaurant{
+  margin-top: 30px;
+}
+
+.profile-rest .restaurantlist {
+  margin-top: 30px;
+}
+
+.profile-rest .button a {
+  align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 3px;
+  font-family: 'Muli', sans-serif;
+  background: #960848;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.user-prof-button .actions a {
+  background-color: #b1b1b1;
+}
+
+.reservationlist .reservation {
+  border: 2px solid black;
+  width: 50%;
+  margin: auto;
+  margin-top: 3%;
+  margin-bottom: 40px;
+}
+
+
+#new-restaurant  {
+  margin-top: 35px;
+  margin-bottom: 85px;
+}
+
+#new-restaurant a {
+  align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 3px;
+  font-family: 'Muli', sans-serif;
+  background: #960848;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+
+
+#owner-function {
+  margin-bottom: 20px;
+}
+
+#owner-function a {
+  align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  letter-spacing: 3px;
+  font-family: 'Muli', sans-serif;
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 6px;
+}

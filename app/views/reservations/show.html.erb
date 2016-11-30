@@ -1,0 +1,19 @@
+
+<div class="reservation">
+  <h1>Your Reservation Details</h2>
+    <h4 id="reservation-info">
+      Restaurant:</strong> <%= @restaurant.name %><br />
+      Date: <%= @reservation.date %><br />
+      Time: <%= @reservation.time.strftime('%I:%M %p')%><br />
+      Party Size: <%= @reservation.party_size %><br />
+      Comments: <%= @reservation.comment %><br />
+    </h4>
+  <div class="button" id="reservation-button">
+    <%= link_to "Edit", edit_restaurant_reservation_path %>
+    <%= link_to "Delete", restaurant_reservation_path, method: :delete, data: {confirm: "Are you sure you want to cancel your reservation? "} %>
+    <%= link_to "Back to Restaurant", restaurant_path(@restaurant) %>
+  </div>
+</div>
+
+<div class="padding">
+</div>

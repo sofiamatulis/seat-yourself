@@ -1,0 +1,82 @@
+// Place all the styles related to the sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.header{
+  font-size: 30px;
+  font-family: 'Playfair Display', serif;
+  color:#ffffff;
+  text-align: center;
+  padding-bottom: 10px;
+  text-transform:uppercase;
+}
+
+.field{
+  color:#ffffff;
+  font-family: 'Muli', sans-serif;
+  padding-top: 15px;
+  text-align: right;
+}
+
+.log-in-form .field{
+  text-align: center
+}
+
+.field input{
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.actions{
+  padding-top: 25px;
+  text-align: center;
+}
+
+.actions input,
+.actions a{
+  color:white;
+  font-size: 13px;
+  padding: 8px 15px;
+  background-color: rgba(150, 8, 72, 0.9);
+  border: none;
+}
+
+.log-in-form{
+  margin:auto;
+  margin-top: 8%;
+  margin-bottom: 70px;
+  width: 300px;
+  padding: 50px 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.sign-up-form{
+  margin:auto;
+  margin-top: 8%;
+  margin-bottom: 70px;
+  width: 300px;
+  padding: 50px 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.log-in{
+  background-image: url('food-salad.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.log-in input{
+  color:white;
+  font-size: 13px;
+  padding: 8px 15px;
+  border: none;
+}
+
+.actions a{
+  text-decoration: none;
+  font-family: 'Muli', sans-serif;
+}
